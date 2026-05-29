@@ -1,0 +1,6 @@
+{
+  "name": "FileBridge",
+  "description": "Cross-platform file discovery and transfer for Android and Windows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
