@@ -1,5 +1,5 @@
 import React from 'react';
-import { Laptop, Smartphone, Folder, ArrowLeftRight, Settings, Info, Library, HardDrive, Wifi } from 'lucide-react';
+import { Laptop, Smartphone, Folder, ArrowLeftRight, Settings, Info, Library, HardDrive, Wifi, Sparkles } from 'lucide-react';
 
 export type SidebarTab = 'devices' | 'files' | 'transfers' | 'settings';
 
@@ -83,9 +83,14 @@ export default function Sidebar({ activeTab, onTabChange, localDeviceName, trans
       </div>
 
       {/* Bottom Profile Details */}
-      <div className="space-y-2">
-        <div className="h-[1px] bg-white/5 mx-1" />
-        <div className="px-3 py-1 text-[11px] text-zinc-500 font-medium tracking-tight">
+      <div className="space-y-1.5 pb-[50px] pt-2">
+        <div className="h-[1px] bg-white/5 mx-1 mb-2.5" />
+        {/* Creator Credit */}
+        <div className="flex items-center justify-center gap-1.5 text-[11px] text-zinc-500/70 font-medium select-none cursor-default" id="sidebar-creator-credit">
+          <Sparkles className="w-3.5 h-3.5 text-zinc-500/70 stroke-[1.8]" />
+          <span>Made by Pavan</span>
+        </div>
+        <div className="px-3 text-[10px] text-zinc-650 font-semibold tracking-tight text-center">
           FileBridge v1.2
         </div>
       </div>
