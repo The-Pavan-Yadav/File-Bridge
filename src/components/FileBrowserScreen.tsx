@@ -426,7 +426,7 @@ export default function FileBrowserScreen({
       navigateToPath(file.path);
     } else {
       setInspectorFile(file);
-      setPreviewFile(file);
+      setSelectedPaths([file.path]);
     }
   };
 

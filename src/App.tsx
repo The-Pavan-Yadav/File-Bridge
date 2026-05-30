@@ -615,7 +615,7 @@ export default function App() {
             id="filebridge-app-window"
             className={`flex flex-col rounded-2xl shadow-2xl overflow-hidden border border-white/8 transition-all duration-305 transform mica-effect shrink-0 ${
               isMaximized 
-                ? 'w-full h-full' 
+                ? 'fixed inset-4 z-[80] w-[calc(100vw-32px)] h-[calc(100vh-32px)] max-w-none' 
                 : viewMode === 'dual'
                   ? 'w-full lg:w-[680px] xl:w-[780px] h-[720px]'
                   : 'w-full max-w-6xl h-[720px]'
